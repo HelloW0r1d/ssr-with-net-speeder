@@ -20,7 +20,7 @@ RUN ./configure && make && make install
 RUN echo "/usr/local/lib" > /etc/ld.so.conf.d/local.conf
 RUN ldconfig
 
-RUN git clone -b manyuser https://github.com/shadowsocksr/shadowsocksr.git ssr
+RUN git clone -b manyuser https://github.com/shadowsocksr-backup/shadowsocksr.git ssr
 RUN git clone https://github.com/snooda/net-speeder.git net-speeder
 WORKDIR net-speeder
 RUN sh build.sh
